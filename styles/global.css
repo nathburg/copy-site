@@ -1,35 +1,116 @@
-:root {
+/*:root {
     --background: rgb(224, 234, 247);
     --header-background: white;
-    --footer-background: rgb(243, 242, 242);
+    --footer-background: rgb(243, 242, 242);*/
 }
 
 body {
     height: 100vh;
     font-family: 'Rubik', san-serif;
     background: var(--background);
-    display: grid;
+    /*display: grid;*/
     grid-template-rows: auto 1fr auto;
+    font-family: sans-serif;
 }
 
 header {
-    position: sticky;
-    top: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: #00E;
+    font-size: 32px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: var(--header-background);
+    background-color: #f4f4f4;
+}
+
+.grey {
+    font-family: 'Times New Roman', Times, serif;
+    color: #222;
+    font-size: 24px;
 }
 
 main {
     padding: 20px;
+    height: 1000px;
 }
 
 footer {
-    position: sticky;
     bottom: 0;
     padding: 7px 20px;
     font-size: .8em;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     background-color: var(--footer-background);
+}
+
+.container {
+    max-width: 1000px;
+    display: grid;
+    margin: 0 auto;
+    height: 100%;
+    grid-template-columns: 20% 70% 10%;
+}
+
+.box {
+    height: 100%;
+    font-family: sans-serif;
+    color: #00E;
+    /*display: flex;
+    justify-content: center;
+    align-items: top;*/
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 10px;
+
+}
+
+
+.col-1 {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 5% 10% 5% 10% 25% 25% 20%;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+} 
+
+.col-2 {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 5% 95%;
+} 
+
+.col-3 {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 5% 75% 20%;
+} 
+
+.meat {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 40% 40% 20%;
+}
+
+.meat .box {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sub-col-1 {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 30% 30% 40%;
+}
+
+.sub-col-2 {
+    display:grid;
+    height: 100%;
+    grid-template-rows: 35% 55% 10%;
+}
+
+.sub-col-3 {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 80% 15% 5%;
 }
